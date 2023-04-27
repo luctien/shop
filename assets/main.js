@@ -8,10 +8,10 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     center: false,
-    navText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>",
-    ],
+    // navText: [
+    //   "<i class='fa fa-angle-left'></i>",
+    //   "<i class='fa fa-angle-right'></i>",
+    // ],
     responsive: {
       0: {
         items: 1,
@@ -33,6 +33,10 @@ $(document).ready(function () {
     arrows: true,
     slidesToShow: 4,
     infinite: true,
+    // navText: [
+    //   "<i class='fa fa-angle-left'></i>",
+    //   "<i class='fa fa-angle-right'></i>",
+    // ],
     responsive: [
       {
         breakpoint: 1024,
