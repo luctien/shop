@@ -167,6 +167,76 @@ h2 {
 .box-menu li a:hover {
     color: #000;
 }
+
+
+/* SLIDE HEADER*/
+.btn-slide {
+  border: none;
+  border-radius: 6px;
+  padding: 2px 16px;
+  font-weight: 600;
+}
+.btn-slide:hover {
+  background: #d58822;
+}
+.carousel-indicators button:hover {
+  background-color: #d58822;
+}
+.carousel-item h5 {
+  font-size: 58px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+}
+.carousel-item p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.carousel-item img {
+  opacity: .6;
+}
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
+.carousel-caption {
+  margin-bottom: 60px;
+}
+
+/* SERVICE */
+.service-icon i {
+  font-size: 32px;
+  color: #d58822;
+  padding-top: 12px;
+}
+.service{
+  padding-top: 10px;
+}
+.service1 {
+  border: 1px solid rgba(0,0,0,.125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+  position: relative;
+  margin-bottom: 5px;
+  color: black;
+  border-bottom: 1px ridge;
+}
+.service-text {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 30px;
+  margin-bottom: 6px;
+}
+
+
+
+/* PRODUCT*/
 .product-most h3 {
     margin-top: 20px;
     height: 52px;
@@ -227,70 +297,6 @@ h6 {
     font-weight: 600;
     margin-top: 22px;
 }
-.btn-slide {
-    border: none;
-    border-radius: 6px;
-    padding: 2px 16px;
-    font-weight: 600;
-}
-.btn-slide:hover {
-    background: #d58822;
-}
-.carousel-indicators button:hover {
-    background-color: #d58822;
-}
-.carousel-item h5 {
-    font-size: 58px;
-    font-weight: 600;
-    color: #000;
-    display: block;
-}
-.carousel-item p {
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
-}
-.carousel-item img {
-    opacity: .6;
-}
-.carousel-control-prev, .carousel-control-next {
-    display: none;
-}
-.carousel-caption {
-    margin-bottom: 60px;
-}
-
-/* service */
-.service-icon i{
-    font-size: 32px;
-    color: #d58822;
-    padding-top: 12px;
-}
-.service{
-    padding-top: 10px;
-}
-.service1{
-    border: 1px solid rgba(0,0,0,.125);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.service-title{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 2;
-    position: relative;
-    margin-bottom: 5px;
-    color: black;
-    border-bottom: 1px ridge;
-}
-.service-text{
-    font-size: 12px;
-    font-weight: 500;
-    margin: 0 30px;
-    margin-bottom: 6px;
-}
-
 
 
 
