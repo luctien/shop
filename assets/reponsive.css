@@ -1,0 +1,56 @@
+@media screen and (max-width:1200px) {
+    .logo {
+        width: 20%;
+    }
+    
+}
+
+
+@media screen and (max-width:992px) {
+
+}
+
+
+@media screen and (max-width:768px) {
+    .logo h2 {
+        font-size: 48px;
+    }
+    .header {
+        position: sticky;top: -1px;
+        left: 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+        z-index: 99;
+    }
+    .bars {
+        display: block;
+    }
+    .person a:last-child {
+        margin: 0;
+    }
+    .carousel-inner h5 {
+        font-size: 16px;
+    }
+    .search-type, .menu, .slick-prev, .slick-next, .slick-arrow {
+        display: none !important;
+    }
+    .about .left {
+        margin: 10px 110px 50px 110px;
+    }
+    .about .right {
+        margin: 0 60px;
+    }
+
+    .list-unstyled, .footer {
+        text-align: center;
+    }
+    .footer li {
+        justify-content: center;
+    }
+    .footer input {
+        margin-left: -36px;
+    }
+
+    .footer .pay {
+        margin-bottom: 20px;
+    }
+}
