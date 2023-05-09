@@ -44,32 +44,19 @@
 
 
 @media screen and (max-width:768px) {
-    .header {
+    .header, .sidenav {
         display: block;
     }
     .repon {
         order: 1;
-    }
-    .sidenav {
         display: block;
     }
     .logo {
         order: 2;
     }
     .logo h2 {
-        font-size: 50px;
+        font-size: 34px;
     }
-    .search {
-        display: none;
-    }
-    .search-icon {
-        display: block;
-        font-size: 20px;
-        margin-right: 30px;
-    }
-    .person a {
-        margin-right: 30px;
-      }
     .person {
         order: 3;
     }
@@ -80,25 +67,35 @@
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
         z-index: 99;
     }
-    .bars {
-        display: block;
-    }
     .person a:last-child {
         margin: 0;
     }
-    .carousel-item h5 {
+    .banner .carousel-item h5 {
         font-size: 26px;
         font-weight: 800;
     }
-    .carousel-item p {
+    .banner .carousel-item p {
         font-size: 16px;
     }
-    .carousel-caption {
+    .banner .carousel-caption {
         padding: 0px;
     }
-    .search-type, .menu, .slick-prev, .slick-next, .slick-arrow {
+    .carousel-item .btn-slide {
+        font-size: 12px;
+        padding: 1px 8px;
+    }
+    .search, .menu, .slick-prev, .slick-next, .slick-arrow {
         display: none !important;
     }
+    /* .service1 {
+        width: 25%;
+    } */
+    .service-title {
+        font-size: 12px;
+    }
+    /* .service .row {
+        height: 30%;
+    } */
 
     .list-unstyled, .footer {
         text-align: center;
@@ -118,25 +115,38 @@
 
 
 @media screen and (max-width: 576px) {
-    .carousel-item {
+    .logo .h2 {
+        font-size: 30px;
+    }
+    .header .logo {
+        /* height: 50px; */
+    }
+    .header .repon {
+        width: 25%;
+    }
+    .header .person {
+        width: 25%;
+    }.header .person a {
+        margin-right: 14px;
+    }
+    .banner .carousel-item {
         height: 140px;
     }
-    .carousel-item img {
+    .banner .carousel-item img {
         height: 140px;
     }
-    .carousel-item h5 {
+    .banner .carousel-item h5 {
         font-size: 20px;
         font-weight: 700;
     }
-    .carousel-item p {
+    .banner .carousel-item p {
         font-size: 14px;
         margin-bottom: 0;
-        width: 100%;
         display: none;
     }
-    .carousel-item .btn-slide {
-        font-size: 12px;
-        padding: 0px 8px;
+    
+    .right .carousel-item p {
+        display: block;
     }
     .about .left {
         width: 60%;

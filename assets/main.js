@@ -69,3 +69,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "white";
 }
+
+// const menu = document.querySelector (".menu-mb")
+// const body = document.querySelector(".body")
+// menu.addEventListener("click", function() {
+//   menu.classList.toggle("change")
+//   body.classList.toggle("change-body")
+// })
+// function myFunction(x) {
+//   x.classList.toggle("change");
+// }
+
+// const side = document.querySelector(".sidenav")
+// console.log(side)
+
+// side.addEventListener("click", function(e) {
+//   console.log(e.target.classList.contains(".sidenav"))
+//   if(e.target.classList.contains(".sidenav")){
+//     side.style.backgroundColor = "#fff";
+//   }
+// })

@@ -9,7 +9,6 @@ body {
 }
 
 .header {
-  /* width: 100%; */
   /* position: sticky;
     z-index: 99;
     top: 0;
@@ -27,7 +26,6 @@ a {
 }
 
 .header-main .container {
-  /* height: 70px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +43,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo {
+  width: 20%;
 }
 
 .search-box button {
@@ -67,12 +68,10 @@ h2 {
 .search-box {
   display: flex;
   justify-content: center;
-  /* width: 90%; */
-  /* margin-left: -90px !important; */
 }
 
 .person {
-  width: 15%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +79,7 @@ h2 {
 
 .person a {
   color: #000;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .cart {
@@ -90,9 +89,9 @@ h2 {
 
 .number-cart {
   position: absolute;
-  right: -20px;
-  top: -14px;
-  font-size: 11px;
+  right: -18px;
+  top: -10px;
+  font-size: 10px;
   font-weight: bold;
   padding: 3px 8px;
   background-color: #606060;
@@ -102,7 +101,6 @@ h2 {
 
 .user,
 .cart {
-  /* display: block; */
   font-size: 20px;
 }
 
@@ -112,41 +110,42 @@ h2 {
   color: #0053cf;
 }
 
-.header span {
-  display: none;
-}
-.search-icon {
+.hide {
   display: none;
 }
 .sidenav {
   height: 100%;
   width: 0px;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  display: none;
+  /* padding-top: 60px; */
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 22px;
+  padding: 8px 0px 8px 22px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+.sidenav a i {
+  margin-right: 12px;
 }
 
 .sidenav a:hover {
   color: #d58822;
   background-color: #303030;
 }
-.sidenav i {
-  padding-right: 12px;
+.sidenav .search-icon {
+  margin-left: -30px;
+  margin-top: 45px;
+  font-size: 28px;
 }
 .sidenav p {
   padding-top: 100px;
@@ -156,18 +155,43 @@ h2 {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 20px;
   font-size: 36px;
-  margin-left: 50px;
 }
 #mySearch {
   width: 100%;
   outline: none;
   margin: 60px 0 16px;
   font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ddd;
+  padding: 8px;
 }
+
+/* .bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+} */
+/* .change-body::before {
+  background-color: #333;
+  opacity: .6;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+} */
 
 
 /* MENU */
