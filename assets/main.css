@@ -32,7 +32,7 @@ a {
 }
 
 h2 {
-  color: #00327d;
+  color: #0049b7;
   font-weight: 900;
   font-size: 60px;
   letter-spacing: -6px;
@@ -65,16 +65,12 @@ h2 {
   outline: none;
 }
 
-.search-box {
-  display: flex;
-  justify-content: center;
-}
-
 .person {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 12px;
 }
 
 .person a {
@@ -110,6 +106,8 @@ h2 {
   color: #0053cf;
 }
 
+
+/*MENU MOBILE*/
 .hide {
   display: none;
 }
@@ -122,13 +120,11 @@ h2 {
   left: 0;
   background-color: #000;
   overflow: hidden;
-  /* transform: translateX(0); */
   transition: 0.5s ease-out;
 }
 .menu-mb {
   width: 250px;
 }
-
 .sidenav a {
   padding: 8px 0px 8px 22px;
   text-decoration: none;
@@ -176,6 +172,7 @@ h2 {
   border: 0;
 }
 
+
 /* .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -203,8 +200,7 @@ h2 {
   z-index: 999;
 } */
 
-
-/* MENU */
+                        /* MENU */
 .menu {
   background-color: #cccccc;
   position: sticky;
@@ -283,6 +279,7 @@ h2 {
 }
 
 
+
 /* SLIDE HEADER*/
 .btn-slide {
   border: none;
@@ -306,14 +303,14 @@ h2 {
   display: block;
 }
 
-.carousel-item p {
+.banner .carousel-item p {
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .banner .carousel-item img {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .carousel-control-prev,
@@ -324,8 +321,7 @@ h2 {
 .carousel-caption {
   margin-bottom: 60px;
 }
-
-/* SERVICE */
+                        /* SERVICE */
 .service-icon i {
   font-size: 32px;
   color: #d58822;
@@ -356,13 +352,12 @@ h2 {
 .service-text {
   font-size: 12px;
   font-weight: 500;
-  margin: 0 30px;
   margin-bottom: 6px;
 }
 
 
 
-/* PRODUCT*/
+                            /* PRODUCT*/
 .product-most h3 {
   margin: 40px 0 18px;
 }
@@ -580,7 +575,6 @@ h6 {
 }
 
 .infor {
-  /* padding-top: 100px; */
   display: flex;
   flex-direction: column;
 }
@@ -625,7 +619,7 @@ ul.detail-infor li i {
 }
 
 .slick-arrow {
-  background: #e9ecef;
+  background: #f2f2f2;
   width: 30px;
   height: 50px;
   border-radius: 4px;
