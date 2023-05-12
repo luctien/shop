@@ -7,7 +7,7 @@
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    outline: 1px solid #c89522;
+    outline: 1px solid #ffedc7;
   }
   
   .contact button {
@@ -15,14 +15,14 @@
     width: 30%;
     margin: 0 auto;
     color: white;
-    padding: 12px 20px;
+    padding: 6px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .contact button:hover {
-    background-color: #C89551;
+    background-color: #f19e30;
   }
   
   .contact form {
@@ -32,10 +32,20 @@
   }
   .infor-shop p {
     /* display: inline-block; */
-    border-bottom: 1px solid #41556d;
-    margin-right: 50%;
-    line-height: 50px;
+    /* border-bottom: 1px solid #41556d; */
+    /* margin-right: 50%; */
+    line-height: 40px;
   }
-  .infor-shop {
-    padding-left: 50px;
+  .infor-shop a:hover {
+    color: #c89522;
   }
+  .map {
+    margin-top: 50px;
+  }
+
+@media screen and (max-width:576px) {
+  .detail-infor p {
+    border: none;
+    margin-right: auto;
+  }
+}

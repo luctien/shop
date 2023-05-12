@@ -1,0 +1,19 @@
+.present .pic img {
+    aspect-ratio: 16/9;
+}
+.title-list ul li {
+    line-height: 40px;
+}
+.cart-page {
+    background-image: url(./image/slide1.png);
+    opacity: 0.8;
+    position: relative;
+}
+.cart-page h6 {
+    position: absolute;
+}
+@media screen and (max-width: 576px) {
+    .title-list ul li {
+        line-height: 32px;
+    }
+}
