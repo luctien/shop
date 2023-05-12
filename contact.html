@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/reponsive.css">
     <link rel="stylesheet" href="./assets/cart.css">
+    <link rel="stylesheet" href="./assets/contact.css">
     
 </head>
 <body>
@@ -75,7 +76,7 @@
                   <i class="fas fa-user-alt"></i>
                 </div></a>
               <a href="./cart.html">
-                <div class="cart text-primary">
+                <div class="cart">
                 <i class="fas fa-shopping-cart"></i><div class="number-cart">0</div>
               </div></a>
             </div>
@@ -90,191 +91,74 @@
         <li><a href="./index.html">TRANG CHỦ</a></li>
         <li><a href="">SẢN PHẨM</a></li>
         <li><a href="">TIN TỨC</a></li>
-        <li><a href="./contact.html">LIÊN HỆ</a></li>
+        <li><a class="text-primary" href="./contact.html">LIÊN HỆ</a></li>
         <li><a href="">GIỚI THIỆU</a></li>
       </ul></div>
     </div>
   </div>
-  <div class="cart-page container pb-5">
-        <h6 class="name-page mt-5"><a href="./index.html">Trang chủ</a>/Giỏ hàng</h6>
-        <label for="show-shopping-cart"></label>
-        <h4 class="text-center pb-4">GIỎ HÀNG</h4>
+  <div class="contact">
+    <div class="cart-page container pb-5">
+        <h6 class="name-page mt-5">
+            <a href="./index.html">Trang chủ</a>/Liên hệ
+        </h6>
+    </div>
+    <h4 class="text-center pb-4 text-uppercase">Liên hệ với chúng tôi</h4>
 
-        <div class="shopping-cart-empty">
-            <p class="text-center pb-5">Giỏ hàng đang trống</p>
+
+
+
+    <div class="contact container">
+        <div class="row">
+    <div class="col-lg-6">
+    <form action="">
+    <h4 class="text-center">Thông tin liên hệ</h4>
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Họ và tên">
+
+    <input type="text" id="lname" name="phone" placeholder="Số điện thoại">
+    
+    <input type="text" id="lname" name="email" placeholder="Email">
+    
+    <input type="text" id="lname" name="title" placeholder="Chủ đề">
+
+        <!-- <label for="country"></label>
+        <select id="country" name="country">
+        <option value="china">China</option>
+        <option value="vietnam">Vietnam</option>
+        <option value="usa">USA</option>
+        </select> -->
+
+        <label for="subject"></label>
+        <textarea id="subject" name="subject" placeholder="Lời nhắn" style="height:200px"></textarea>
+
+        <button class="fs-5 fw-semibold">Gửi</button>
+        </form>
+    </div>
+
+
+    <div class="col-lg-6 pt-2 pt-lg-0 mt-4 mt-lg-0 infor-shop">
+        <h3 class="fw-semibold pt-4 pb-4">Công Ty Cổ Phần Bán Lẻ Nội Thất Số Interior</h3>
+        <div class="">
+        <p>Trụ sở chính: 360 Cầu Giấy, Hà Nội</p>
+        <p>Liên hệ tư vấn: Hotline (+84) 355884026</p>
+        <p>Email: luxsupport@gmail.com</p>
         </div>
-
-    <input type="checkbox" name="" id="show-shopping-cart" />
-
-    <table class="shopping-cart">
-      <thead class="shopping-cart-columns text-center bg-dark-subtle">
-        <tr>
-          <th class="p-3">Sản phẩm</th>
-          <th>Tên sản phẩm</th>
-          <th>Giá sản phẩm</th>
-          <th>Số lượng</th>
-          <th>Tạm tính</th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody class="cart-items text-center">
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/1.jpg"
-                alt=""
-              />
-              <div class="product-title">SẢN PHẨM</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Ghế Soto Apartment</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">1000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-              <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-              <span class="quantity">1</span>
-              <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">1000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/2.jpg"
-                alt=""
-              />
-              <div class="product-title">SẢN PHẨM</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Product 2</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">1000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">2</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">1000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/3.jpg"
-                alt=""
-              />
-              <div class="product-title">SẢN PHẨM</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Product 3</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">1500</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">1</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">2000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/5.jpg"
-                alt=""
-              />
-              <div class="product-title">SẢN PHẨM</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">SẢN PHẨM</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">1000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">2</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">5000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-
-      <tfoot class="text-center fw-bold">
-        <tr>
-          <td class="pay" colspan="3"><button class="pay-cart">
-        <a href="">THANH TOÁN</a>
-      </button></td>
-          <td class="total-quantity p-3">4</td>
-          <td class="total-price">6000 vnđ</td>
-          <td></td>
-        </tr>
-      </tfoot>
-      
-    </table>
-    <!-- <div class="total-price">6000</div> -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7947.93103730971!2d105.78994736370426!3d21.035150935956466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab394353b821%3A0x47c950bb0f081a1c!2zQuG6o28gdMOgbmcgRMOibiB04buZYyBo4buNYyBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1683891622772!5m2!1svi!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <!-- <div class="col-12">
+        <h5 class="text-center pt-5 pt-3">Vị trí của chúng tôi</h5>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.97840467967!2d105.79576383671714!3d21.022734639763673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1683205483240!5m2!1svi!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> -->
     </div>
   </div>
+  
+
+</div>
+
+
 
     <div class="service container mb-5 mt-5">
         <div class="row gap-0">

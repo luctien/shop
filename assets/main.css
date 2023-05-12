@@ -44,7 +44,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.logo {
+.header .logo {
   width: 20%;
 }
 
@@ -387,7 +387,7 @@ a {
   height: 240px;
 }
 
-h6 {
+.item h6 {
   font-size: 20px;
   font-weight: 900;
   margin-top: 20px;
