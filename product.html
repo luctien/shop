@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <link rel="icon" href="./assets/image/interior.png">
+
+    <!-- Import bootstrap -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- Import font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Import fontawesome -->
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/solid.min.css">
+
+    <!-- OWL -->
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+    
+    <!-- Import Jquery slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/reponsive.css">
+    <link rel="stylesheet" href="./assets/cart.css">
+    <link rel="stylesheet" href="./assets/contact.css">
+    <link rel="stylesheet" href="./assets/present.css">
+    <link rel="stylesheet" href="./assets/news.css">
+    <link rel="stylesheet" href="./assets/product.css">
+    
+</head>
+<body>
+  <div class="header">
+    <div class="header-main">
+      <div class="container">
+            <div class="repon hide">
+            <div id="mySidenav" class="sidenav dp-flex flex-column">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <div class="d-flex align-items-center justify-content-start">
+                <input type="text" id="mySearch" placeholder="Tìm kiếm sản phẩm...">
+                <div class="search-icon text-black"><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+              <div class="menu-mb">
+              <a href="#"><i class="fa-solid fa-house"></i>Trang chủ</a>
+              <a href="#"><i class="fa-solid fa-couch"></i>Sản phẩm</a>
+              <a href="#"><i class="fa-solid fa-newspaper"></i>Tin tức</a>
+              <a href="#"><i class="fa-solid fa-envelope"></i></i>Liên hệ</a>
+              <a href="#"><i class="fa-solid fa-address-card"></i>Giới thiệu</a>
+              <p class="text-center">© 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Nội Thất Số Interior</p>
+            </div>
+            </div>
+
+
+            <i style="font-size:26px; cursor:pointer" onclick="openNav()"onclick="openNav()" class="fa-solid fa-bars mbicon"></i>
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><h2>INTERIOR</h2></a>
+            </div>
+            <div class="search"><form class="search-box d-flex justify-content-center">
+                <input class="search-type" type="input" placeholder="Tìm kiếm sản phẩm" aria-label="">
+                <button class="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form></div>
+            
+            <div class="person">
+              <a href="">
+                <div class="user">
+                  <i class="fas fa-user-alt"></i>
+                </div></a>
+              <a href="./cart.html">
+                <div class="cart">
+                <i class="fas fa-shopping-cart"></i><div class="number-cart">0</div>
+              </div></a>
+            </div>
+            
+      </div>
+    </div>
+  </div>
+
+  <div class="menu">
+    <div class="menu-main container">
+      <ul class="menu-drop">
+        <li><a href="./index.html">TRANG CHỦ</a></li>
+        <li><a class="text-primary" href="./product.html">SẢN PHẨM</a></li>
+        <li><a href="./news.html">TIN TỨC</a></li>
+        <li><a href="./contact.html">LIÊN HỆ</a></li>
+        <li><a href="./present.html">GIỚI THIỆU</a></li>
+      </ul></div>
+    </div>
+  </div>
+    <div class="product">
+        <div class="cart-page container pb-5">
+            <h6 class="name-page mt-5">
+                <a href="./index.html">Trang chủ</a>/Sản phẩm
+            </h6>
+        </div>
+        <h4 class=" news text-center pb-5 text-uppercase">Danh mục sản phẩm</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                  <div class="tabfilter">
+                    <div class="tab"><h6 class="text-center">LOẠI SẢN PHẨM</h6>
+                      <div class="select-filter">
+                        <div><input type="checkbox">Bàn</div>
+                        <div><input type="checkbox">Ghế</div>
+                        <div><input type="checkbox">Tủ, Kệ</div>
+                        <div><input type="checkbox">Giường</div>
+                      </div>
+                        
+                    </div>
+
+                    <div class="tab pt-3"><h6 class="text-center">CHẤT LIỆU</h6>
+                      <div class="select-filter">
+                        <div><input type="checkbox">Đồ da</div>
+                        <div><input type="checkbox">Đồ gỗ</div>
+                        <div><input type="checkbox">Thép</div>
+                      </div>
+                    </div>
+
+                    <div class="tab pt-3"><h6 class="text-center">MỨC GÍA</h6>
+                      <div class="select-price pt-2">
+                        <input min='10000' type="number" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="vnđ"> - <input min='10000' type="number" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="vnđ">
+                      </div>
+                      <div class="acti pt-3">
+                        <button class="border-0 mx-2 bg-gradient bg-primary"><i class="fa-regular fa-filter"></i>Lọc</button>
+                        <button class="border-0 mx bg-gradient"><i class="fa-solid fa-rotate-left"></i>Reset</button>
+                      </div>
+                        
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-9 tab-pro">
+                  <div>
+                    <ul class="list-unstyled d-flex flex-row justify-content-end">
+                      <li><i class="fas fa-sort-amount-up px-1"></i>Giá cao</li>
+                      <li><i class="fas fa-sort-amount-down px-1"></i>Giá thấp</li>
+                      <li><i class="fas fa-eye px-1"></i>Xem nhiều</li>
+                    </ul>
+                  </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="item">
+                                    <a href="#">
+                                      <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+                                      <div class="product-info">
+                                        <h6 class="pro-title">Ghế Soto Apartment</h6>
+                                        <div class="pro-price">2.250.000 đ</div>
+                                        <div class="pro-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <div class="rating-num text-dark">(72)</div>
+                                        </div>
+                                      </div>
+                                      <div class="add-cart">
+                                        <a href=""><button>Thêm vào giỏ hàng</button></a>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="item">
+                                    <a href="#">
+                                      <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+                                      <div class="product-info">
+                                        <h6 class="pro-title">Ghế Soto Apartment</h6>
+                                        <div class="pro-price">2.250.000 đ</div>
+                                        <div class="pro-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <div class="rating-num text-dark">(72)</div>
+                                        </div>
+                                      </div>
+                                      <div class="add-cart">
+                                        <a href=""><button>Thêm vào giỏ hàng</button></a>
+                                      </div>
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="item">
+                              <a href="">
+                              <div class="product-img"><img src="./assets/image/2.JPG" alt=""></div>
+                              <div class="product-info">
+                                <h6 class="pro-title">Ghế Soto Chair</h6>
+                                <div class="pro-price">6.550.000 đ</div>
+                                <div class="pro-rating">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-alt"></i>
+                                  <div class="rating-num text-dark">(59)</div>
+                                </div>
+                              </div>
+                              <div class="add-cart">
+                                <a href=""><button>Thêm vào giỏ hàng</button></a>
+                              </div>
+                              </a>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                          
+                            <div class="item">
+                              <a href="">
+                              <div class="product-img"><img src="./assets/image/3.jpg" alt=""></div>
+                              <div class="product-info">
+                                <h6 class="pro-title">Bàn Santa Rosa</h6>
+                                <div class="pro-price">3.350.000 đ</div>
+                                <div class="pro-rating">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <div class="rating-num text-dark">(46)</div>
+                                </div>
+                              </div>
+                              <div class="add-cart">
+                                <a href=""><button>Thêm vào giỏ hàng</button></a>
+                              </div>
+                            </a>
+                            </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                          
+                            <div class="item">
+                              <a href="">
+                              <div class="product-img"><img src="./assets/image/4.jpg" alt=""></div>
+                              <div class="product-info">
+                                <h6 class="pro-title">Ghế Soto Chair</h6>
+                                <div class="pro-price">8.250.000 đ</div>
+                                <div class="pro-rating">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-alt"></i>
+                                  <div class="rating-num text-dark">(42)</div>
+                                </div>
+                              </div>
+                              <div class="add-cart">
+                                <a href=""><button>Thêm vào giỏ hàng</button></a>
+                              </div>
+                            </a>
+                            </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="item">
+                              <a href="">
+                              <div class="product-img">
+                                <img src="./assets/image/5.jpg" alt=""></div>
+                              <div class="product-info">
+                                <h6 class="pro-title">Ghế Soto Chair</h6>
+                                <div class="pro-price">2.250.000 đ</div>
+                                <div class="pro-rating">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star-half-alt"></i>
+                                  <div class="rating-num text-dark">(38)</div>
+                                </div>
+                              </div>
+                              <div class="add-cart">
+                                <a href=""><button>Thêm vào giỏ hàng</button></a>
+                              </div>
+                              </a>
+                              </div>
+                              </div>
+
+
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="item">
+                                    <a href="#">
+                                      <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+                                      <div class="product-info">
+                                        <h6 class="pro-title">Ghế Soto Apartment</h6>
+                                        <div class="pro-price">2.250.000 đ</div>
+                                        <div class="pro-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <div class="rating-num text-dark">(72)</div>
+                                        </div>
+                                      </div>
+                                      <div class="add-cart">
+                                        <a href=""><button>Thêm vào giỏ hàng</button></a>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="item">
+                                    <a href="#">
+                                      <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+                                      <div class="product-info">
+                                        <h6 class="pro-title">Ghế Soto Apartment</h6>
+                                        <div class="pro-price">2.250.000 đ</div>
+                                        <div class="pro-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <div class="rating-num text-dark">(72)</div>
+                                        </div>
+                                      </div>
+                                      <div class="add-cart">
+                                        <a href=""><button>Thêm vào giỏ hàng</button></a>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="item">
+                                    <a href="#">
+                                      <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+                                      <div class="product-info">
+                                        <h6 class="pro-title">Ghế Soto Apartment</h6>
+                                        <div class="pro-price">2.250.000 đ</div>
+                                        <div class="pro-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <div class="rating-num text-dark">(72)</div>
+                                        </div>
+                                      </div>
+                                      <div class="add-cart">
+                                        <a href=""><button>Thêm vào giỏ hàng</button></a>
+                                      </div>
+                                    </a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                  <div><div class="list-page d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-backward"></i>
+                    <ul class="list-unstyled d-flex justify-content-around align-items-center p-4">
+                    <li class="text-bg-secondary">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li></ul>
+                    <i class="fa-solid fa-forward"></i>
+                    
+                  </div></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+
+
+
+
+
+
+    <div class="service container mb-5 mt-5">
+        <div class="row gap-0">
+          <div class="col-6 col-lg-3 service1">
+            <div class="service-icon">
+            <i class="fa fa-check"></i></div>
+            <div class="service-title">
+                        Bảo đảm chất lượng
+                      </div>
+                      <div class="service-text">
+                        Cam kết sản phẩm chính hãng
+                      </div>          
+                </div>
+                <div class="col-6 col-lg-3 service1">
+                    <div class="service-icon">
+                        <i class="fa fa-truck"></i>
+                      </div>
+                      <div class="service-title">
+                        Miễn phí giao hàng
+                      </div>
+                      <div class="service-text">
+                        Áp dụng với tất cả các sản phẩm
+                      </div>
+                </div>
+                <div class="col-6 col-lg-3 service1">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-headset"></i>
+                      </div>
+                      <div class="service-title">
+                        Hỗ trợ trực tuyến
+                      </div>
+                      <div class="service-text">
+                        Hỗ trợ tư vấn 24/7
+                      </div>
+                </div>
+                <div class="col-6 col-lg-3 service1">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-gift"></i>
+                      </div>
+                      <div class="service-title">
+                        Ưu đãi và khuyến mại
+                      </div>
+                      <div class="service-text">
+                        Luôn có nhiều mã giảm giá cho bạn
+                      </div>
+                </div>
+              </div>
+        </div>
+
+
+
+
+
+      
+
+<!-- footer -->
+<div class="footer">
+  <div class="container footer">
+    <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="logo"><h2>INTERIOR</h2></div>
+      <h4 class="name">Công Ty Cổ Phần Bán Lẻ<br> Nội Thất Số Interior</h4>
+      <div class="bottom">
+        <span class="follow">Theo dõi chúng tôi<br>
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </span>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-12 link">
+      <h5>Liên kết hữu ích</h5>
+      <ul>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Sản phẩm</a></li>
+        <li><a href="">Tin tức</a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Giới thiệu</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 link">
+      <h5>Về chúng tôi</h5>
+      <div class="infor">
+        <ul class="detail-infor">
+            <li>
+              <a href=""><i class="fa-solid fa-earth-asia"></i>360 Cầu Giấy, Hà Nội</a>
+            </li>
+            <li>
+              <a href="mailto:someone@example.com"><i class="fa-solid fa-envelope"></i>abc@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:(+84) 355884026"><i class="fa-solid fa-phone-volume"></i>(+84) 355884026</a>
+            </li>
+        </ul>
+        <div class="trust">
+          <img src="./assets/image/ft-img2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <h5>Đăng ký nhận tin</h5>
+      <p>Nhận thêm thông tin và sản phẩm</p>
+      <input type="text" placeholder="Nhập email của bạn...">
+      <button><a href=""><i class="fa-solid fa-chevron-right"></i></a>
+      </button>
+      <div class="pay"><span>Hỗ trợ thanh toán</span>
+        <div>
+        <img src="./assets/image/ft-img6.png" alt="">
+        <img src="./assets/image/ft-img7.png" alt="">
+        <img src="./assets/image/ft-img8.png" alt="">
+        <img src="./assets/image/ft-img9.png" alt="">
+        <img src="./assets/image/ft-img10.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="footer-bottom bg-black text-light text-center">© 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Nội Thất Số Interior</div>
+
+
+
+
+
+
+  <!-- Import Thu vien Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./lib/jquery.min.js"></script>
+
+  <!-- Import JS Thu vien OwlCarouel -->
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Import Slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- Import JS bootstrap -->
+  <script src="./lib/bootstrap/js/bootstrap.bundle.js"></script>
+
+
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>

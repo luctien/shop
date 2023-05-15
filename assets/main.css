@@ -377,14 +377,12 @@ a {
 .item a h6 {
   color: #000;
 }
-.item:hover h6 {
-  color: #d58822;
-  transition: 0.3s;
-}
 
-.item img {
+
+.product-img img {
   width: 100%;
   height: 240px;
+  /* height: 100%; */
 }
 
 .item h6 {
@@ -608,7 +606,6 @@ ul.detail-infor li i {
   width: 100%;
 }
 
-/*slick-slider item*/
 .slick-slide {
   padding: 0 6px;
 }
