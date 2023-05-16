@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="./assets/contact.css">
     <link rel="stylesheet" href="./assets/present.css">
     <link rel="stylesheet" href="./assets/news.css">
+    <link rel="stylesheet" href="./assets/detailproduct.css">
     
 </head>
 <body>
@@ -104,48 +105,247 @@
                 <a href="./index.html">Trang chủ</a>/Sản phẩm
             </h6>
         </div>
-        <h4 class=" detailpro text-center pb-5 text-uppercase">Sofa Soto Chair</h4>
+        <h4 class=" detailpro text-center pb-5 text-uppercase fw-bold">Sofa Soto Chair</h4>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6 bg-light-subtle">
-                    <img src="./assets/image/2.JPG" alt="">
+                <div class="col-sm-12 col-md-6">
+                    <div>
+                      <div class="imgpro-top">
+                          <img id="bigimg" src="./assets/image/2.JPG">
+                          <!-- <div id="myresult" class="img-zoom-result"></div> -->
+                      </div>
+                      <div class="imgpro-bottom d-flex justify-content-around">
+                        <div class="sm-img selected" onclick="changeBorder(this)">
+                          <img src="./assets/image/2r.jpg" alt="" onclick="changeImage(this)">
+                        </div>
+                        <div class="sm-img" onclick="changeBorder(this)">
+                          <img src="./assets/image/2.JPG" alt="" onclick="changeImage(this)">
+                        </div>
+                        <div class="sm-img" onclick="changeBorder(this)">
+                          <img src="./assets/image/2r.jpg" alt="" onclick="changeImage(this)">
+                        </div>
+                        <div class="sm-img" onclick="changeBorder(this)">
+                          <img src="./assets/image/1.jpg" alt="" onclick="changeImage(this)">
+                        </div>
+                      </div>
+                    </div>
+
                 </div>
 
 
-                <div class="col-sm-12 col-md-6 bg-success-subtle">
-                    <h6>Sofa Soto Chair</h6>
-                    <div class="pro-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-alt"></i>
-                        <div class="rating-num text-dark">(59 đánh giá)</div>
+                <div class="col-sm-12 col-md-6 bg-body-tertiary">
+                  <div class="infor-pro">
+                    <h5 class="text-center p-4">Sofa Soto Chair</h5>
+                    <div class="d-sm-flex justify-content-evenly">
+                      <div class="pro-rating rate-detail">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-alt"></i>
+                          <div class="rating-num text-dark">(59 đánh giá)</div>
+                      </div>
+                      <p class="m-0">Chia sẻ ngay
+                        <i class="fa-brands fa-facebook mx-1 text-primary"></i>
+                        <i class="fa-brands fa-instagram text-danger"></i>
+                        <i class="fa-brands fa-twitter mx-1 text-info"></i>  </p>
                     </div>
-                    <p>Chia sẻ ngay<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></p>
-                    <h4>đ 3.500.000</h4> <h4 class="text-decoration-line-through">đ 5.000.000</h4><h6>25% OFF</h6>
-                    <p>Một chiếc ghế xinh đẹp phù hợp với phong cách đơn giản nhưng đầy tinh tế và sang trọng.</p>
-                    <h6>Màu sắc
-                        <button class="x"></button>
+                    <div class="d-sm-flex align-items-center p-3">
+                      <h4 class="fw-bold">đ 3.750.000</h4>
+                      <h5 class="text-decoration-line-through text-body-tertiary mx-4">đ 5.000.000</h5>
+                      <h6 class="text-bg-danger px-1 d-block">25% OFF</h6>
+                    </div>
+                      <p>Một chiếc ghế xinh đẹp phù hợp với phong cách đơn giản nhưng đầy tinh tế và sang trọng.</p></div>
+                  
+                    <h6 class="color fw-semibold text-muted d-flex align-items-center px-5 mt-3">Màu sắc
+                        <button class="x mx-3"></button>
                         <button class="n"></button>
-                        <button class="r"></button>
+                        <button class="r mx-3"></button>
                     </h6>
-                    <h6>Số lượng
-                        <div class="product-quantity">
+                    <h6 class="fw-semibold text-muted d-flex align-items-center px-5">Số lượng
+                        <div class="product-quantity mx-3">
                             <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                            <span class="quantity">2</span>
+                            <span class="quantity">1</span>
                             <button class="btn-up"><i class="fa-solid fa-add"></i></button>
                         </div>
                     </h6>
-                    <button>Thêm vào giỏ hàng</button>
-                </div>
-
+                    <div class="d-sm-flex justify-content-evenly mt-5 mb-3">
+                    <button class="buynow">Mua ngay</button>
+                    <button class="addcart">Thêm vào giỏ hàng</button></div>
+                  </div>
 
             </div>
-
+            <nav class="mt-5">
+          <div class="nav nav-tabs fw-bold" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mô tả sản phẩm</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Đánh giá & nhận xét</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <p>Ghế Sofa Sven Charme Tan được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. Ghế hỗ trợ mang đến cho người dùng tư thế chuẩn nhất khi ngồi làm việc. Với kiểu dáng thiết kế thiên về trẻ trung, sang trọng và vô cùng hiện đại. Nhiều người thường hay bị nhầm lẫn dòng ghế công thái học với kiểu ghế văn phòng, form đứng đắn hơn rất nhiều.Ghế công thái học Ergonomic Felix 6232A được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. </p>
+            <span class="d-block">Chất liệu: Da</span>
+            <span>Trọng lượng: 20kg</span>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="">
+              <div class="d-flex align-items-center">
+                <img src="./assets/image/images 2.png" class="mx-4 mt-4 mb-2">
+                <div class="d-flex flex-column">
+                <h6 class="client"> Carlo Ancelotti - Nam Định</h6>
+                <div class="text-warning">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i></div></div></div>
+                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+            </div>
+            <div class="">
+              <div class="d-flex align-items-center">
+                <img src="./assets/image/images 1.png" class="mx-4 mt-4 mb-2">
+                <div class="d-flex flex-column">
+                <h6 class="client"> Carlo Ancelotti - Anh Quốc</h6>
+                <div class="text-warning">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-alt"></i></div></div></div>
+                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+            </div>
+            <div class="">
+              <div class="d-flex align-items-center">
+                <img src="./assets/image/images 3.png" class="mx-4 mt-4 mb-2">
+                <div class="d-flex flex-column">
+                <h6 class="client"> Carlo Ancelotti - Hà Nội</h6>
+                <div class="text-warning">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i></div></div></div>
+                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+            </div>
+          </div>
         </div>
 
+        </div>
+       
 
+
+    </div>
+
+    <div class="product-most">
+      <h3 class="fw-bold text-center">Sản phẩm liên quan</h3>
+      <div class="card-slider container">
+        <div class="item">
+          <a href="#">
+            <div class="product-img"><img src="./assets/image/1.jpg" alt=""></div>
+            <div class="product-info">
+              <h6 class="pro-title">Ghế Soto Apartment</h6>
+              <div class="pro-price">2.250.000 đ</div>
+              <div class="pro-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class="rating-num text-dark">(72)</div>
+              </div>
+            </div>
+            <div class="add-cart">
+              <a href=""><button>Thêm vào giỏ hàng</button></a>
+            </div>
+          </a>
+        </div>
+      
+        <div class="item">
+          <a href="">
+          <div class="product-img"><img src="./assets/image/2.JPG" alt=""></div>
+          <div class="product-info">
+            <h6 class="pro-title">Ghế Soto Chair</h6>
+            <div class="pro-price">6.550.000 đ</div>
+            <div class="pro-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <div class="rating-num text-dark">(59)</div>
+            </div>
+          </div>
+          <div class="add-cart">
+            <a href=""><button>Thêm vào giỏ hàng</button></a>
+          </div>
+        </a>
+        </div>
+      
+        <div class="item">
+          <a href="">
+          <div class="product-img"><img src="./assets/image/3.jpg" alt=""></div>
+          <div class="product-info">
+            <h6 class="pro-title">Bàn Santa Rosa</h6>
+            <div class="pro-price">3.350.000 đ</div>
+            <div class="pro-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class="rating-num text-dark">(46)</div>
+            </div>
+          </div>
+          <div class="add-cart">
+            <a href=""><button>Thêm vào giỏ hàng</button></a>
+          </div>
+        </a>
+        </div>
+      
+        <div class="item">
+          <a href="">
+          <div class="product-img"><img src="./assets/image/4.jpg" alt=""></div>
+          <div class="product-info">
+            <h6 class="pro-title">Ghế Soto Chair</h6>
+            <div class="pro-price">8.250.000 đ</div>
+            <div class="pro-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <div class="rating-num text-dark">(42)</div>
+            </div>
+          </div>
+          <div class="add-cart">
+            <a href=""><button>Thêm vào giỏ hàng</button></a>
+          </div>
+        </a>
+        </div>
+      
+        <div class="item">
+          <a href="">
+          <div class="product-img">
+            <img src="./assets/image/5.jpg" alt=""></div>
+          <div class="product-info">
+            <h6 class="pro-title">Ghế Soto Chair</h6>
+            <div class="pro-price">2.250.000 đ</div>
+            <div class="pro-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <div class="rating-num text-dark">(38)</div>
+            </div>
+          </div>
+          <div class="add-cart">
+            <a href=""><button>Thêm vào giỏ hàng</button></a>
+          </div>
+          </a>
+          </div>
+          
+      </div>
     </div>
 
     

@@ -177,3 +177,16 @@ function updateCartInfo() {
 }
 
 updateCartInfo();
+
+function changeBorder(box) {
+  var boxes = document.querySelectorAll(".sm-img");
+  for (var i = 0; i < boxes.length; i++) {
+    boxes[i].classList.remove("selected");
+  }
+  box.classList.add("selected");
+}
+// Todo: BG Image
+function changeImage(img) {
+  var mainImage = document.getElementById("bigimg");
+  mainImage.src = img.src;
+}
