@@ -52,17 +52,17 @@
                 <div class="search-icon text-black"><i class="fa-solid fa-magnifying-glass"></i></div>
               </div>
               <div class="menu-mb">
-              <a href="#"><i class="fa-solid fa-house"></i>Trang chủ</a>
-              <a href="#"><i class="fa-solid fa-couch"></i>Sản phẩm</a>
-              <a href="#"><i class="fa-solid fa-newspaper"></i>Tin tức</a>
-              <a href="#"><i class="fa-solid fa-envelope"></i></i>Liên hệ</a>
-              <a href="#"><i class="fa-solid fa-address-card"></i>Giới thiệu</a>
+                <a href="./index.html"><i class="fa-solid fa-house"></i>Trang chủ</a>
+                <a href="./product.html"><i class="fa-solid fa-couch"></i>Sản phẩm</a>
+                <a href="./news.html"><i class="fa-solid fa-newspaper"></i>Tin tức</a>
+                <a href="./contact.html"><i class="fa-solid fa-envelope"></i></i>Liên hệ</a>
+                <a href="./present.html"><i class="fa-solid fa-address-card"></i>Giới thiệu</a>
               <p class="text-center">© 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Nội Thất Số Interior</p>
             </div>
             </div>
 
 
-            <i style="font-size:26px; cursor:pointer" onclick="openNav()"onclick="openNav()" class="fa-solid fa-bars mbicon"></i>
+            <i style="font-size:26px; cursor:pointer" onclick="openNav()" class="fa-solid fa-bars mbicon"></i>
             </div>
 
             <div class="logo">
@@ -129,12 +129,14 @@
                     </div>
 
                     <div class="tab pt-3"><h6 class="text-center">MỨC GÍA</h6>
-                      <div class="select-price pt-2">
+                      <div class="select-price pt-2" id="enter-price">
                         <input min='10000' type="number" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="vnđ"> - <input min='10000' type="number" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="vnđ">
                       </div>
                       <div class="acti pt-3">
                         <button class="border-0 mx-2 bg-gradient bg-primary"><i class="fa-regular fa-filter"></i>Lọc</button>
-                        <button class="border-0 mx bg-gradient"><i class="fa-solid fa-rotate-left"></i>Reset</button>
+                        <button class="border-0 mx bg-gradient"  onclick="resetData()">
+                          <i class="fa-solid fa-rotate-left"></i>Reset
+                        </button>
                       </div>
                         
                     </div>
@@ -145,13 +147,13 @@
                 <div class="col-9 tab-pro">
                   <div>
                     <ul class="list-unstyled d-flex flex-row justify-content-end">
-                      <li><i class="fas fa-sort-amount-up px-1"></i>Giá cao</li>
-                      <li><i class="fas fa-sort-amount-down px-1"></i>Giá thấp</li>
+                      <li class="upsort"><i class="fas fa-sort-amount-up sortup px-1"></i>Giá cao</li>
+                      <li class="downsort"><i class="fas fa-sort-amount-down px-1"></i>Giá thấp</li>
                       <li><i class="fas fa-eye px-1"></i>Xem nhiều</li>
                     </ul>
                   </div>
                     <div class="container">
-                        <div class="row">
+                        <div class="row" id="product-list">
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="item">
                                     <a href="#">
@@ -530,5 +532,6 @@
 
 
   <script src="./assets/main.js"></script>
+  <script src="./assets/productlist.js"></script>
 </body>
 </html>

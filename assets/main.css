@@ -15,7 +15,16 @@ body {
     left: 0; */
   /* box-shadow: 0 23px 38px 0 rgb(0 0 0 / 10%); */
 }
-
+.success-message {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2000;
+}
 
 a {
   text-decoration: none;
@@ -71,6 +80,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-top: 12px;
+  z-index: 999;
 }
 
 .person a {
@@ -105,7 +115,12 @@ a {
 .search-box .button:hover {
   color: #0053cf;
 }
-
+/* .menu-drop li:last-child ::after {
+  content: "hg";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+} */
 
 /*MENU MOBILE*/
 .hide {
@@ -284,7 +299,7 @@ a {
 .btn-slide {
   border: none;
   border-radius: 6px;
-  padding: 2px 16px;
+  padding: 4px 16px;
   font-weight: 600;
 }
 
@@ -627,4 +642,27 @@ ul.detail-infor li i {
 .slick-arrow:hover,
 .slick-arrow:focus {
   background-color: #cccccc;
+}
+.list-page ul {
+  margin-bottom: 0;
+}
+.list-page i {
+  color: #d9d9d9;
+  /* font-size: 12px; */
+}
+.list-page i:hover {
+  color: #bb9e9e;
+  cursor: pointer;
+}
+.list-page ul li {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+.list-page ul li:last-child {
+  margin: 0;
+}
+.list-page ul li:hover {
+  cursor: pointer;
+  background-color: #dddddd;
+  transition: .6s;
 }

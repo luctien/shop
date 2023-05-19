@@ -3,7 +3,9 @@
         width: 20%;
     }
     .logo h2 {
-        letter-spacing: -4px
+        letter-spacing: -4px;
+        font-size: 50px;
+        margin-left: 30px;
     }
     .person {
         width: 10%;
@@ -24,6 +26,9 @@
 
 
 @media screen and (max-width:992px) {
+    .logo h2 {
+        font-size: 42px;
+    }
     .carousel-item h5 {
         font-size: 32px;
     }
@@ -62,7 +67,8 @@
         padding-top: 10px;
     }
     .logo h2 {
-        font-size: 46px;
+        font-size: 40px;
+        margin: 0;
     }
     .user, .cart {
         font-size: 16px;

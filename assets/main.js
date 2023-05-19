@@ -1,42 +1,58 @@
-// import owl js
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     autoplay: false,
-//     autoplayTimeout: 3000,
-//     autoplayHoverPause: true,
-//     center: false,
-//     // navText: [
-//     //   "<i class='fa fa-angle-left'></i>",
-//     //   "<i class='fa fa-angle-right'></i>",
-//     // ],
-//     responsive: {
-//       0: {
-//         items: 1,
-//       },
-//       600: {
-//         items: 2,
-//       },
-//       1000: {
-//         items: 4,
-//       },
-//     },
-//   });
-// });
+var products=[
+  {
+    "title": "Ghế Soto Apartment",
+    "image-url": "./assets/image/1.jpg",
+    "price": 5250000,
+    "rating": 5,
+    "rating-num": 50,
+    "category": "Ghế",
+  },
+  {
+    "title": "Ghế Soto Apartment",
+    "image-url": "./assets/image/1.jpg",
+    "price": 6250000,
+    "rating": 4.5,
+    "rating-num": 62,
+    "category": "Ghế",
+  },
+  {
+    "title": "Ghế Soto Apartment",
+    "image-url": "./assets/image/1.jpg",
+    "price": 2250000,
+    "rating": 5,
+    "rating-num": 73,
+    "category": "Bàn",
+  },
+  {
+    "title": "Ghế Soto Apartment",
+    "image-url": "./assets/image/1.jpg",
+    "price": 3250000,
+    "rating": 5,
+    "rating-num": 56,
+    "category": "Tủ",
 
-// card-slider
+  },
+  {
+    "title": "Ghế Soto Apartment",
+    "image-url": "./assets/image/1.jpg",
+    "price": 1250000,
+    "rating": 5,
+    "rating-num": 58,
+    "category": "Giường",
+
+  }
+]
+console.log(products);
+
+
+
+// card-slider-product
 $(document).ready(function () {
   $(".card-slider").slick({
     dots: false,
     arrows: true,
     slidesToShow: 4,
     infinite: true,
-    // navText: [
-    //   "<i class='fa fa-angle-left'></i>",
-    //   "<i class='fa fa-angle-right'></i>",
-    // ],
     responsive: [
       {
         breakpoint: 1024,
@@ -53,49 +69,123 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
   });
 });
 
+var isNavClosed=true;
 
-
+//  MENU MOBILE
 function openNav() {
+  isNavClosed=false;
   document.getElementById("mySidenav").style.width = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
 }
-
 function closeNav() {
+  isNavClosed=true;
   document.getElementById("mySidenav").style.width = "0";
-  document.body.style.backgroundColor = "white";
+  // document.body.style.backgroundColor = "white";
 }
 
-// const menu = document.querySelector (".menu-mb")
-// const body = document.querySelector(".body")
-// menu.addEventListener("click", function() {
-//   menu.classList.toggle("change")
-//   body.classList.toggle("change-body")
-// })
-// function myFunction(x) {
-//   x.classList.toggle("change");
-// }
-
-// const side = document.querySelector(".sidenav")
-// console.log(side)
-
-// side.addEventListener("click", function(e) {
-//   console.log(e.target.classList.contains(".sidenav"))
-//   if(e.target.classList.contains(".sidenav")){
-//     side.style.backgroundColor = "#fff";
-//   }
-// })
+//  ĐÓNG MENU MOBILE
+const body = document.getElementsByTagName("body")[0];
+console.log(body);
+const sideNav = document.querySelector("#mySidenav");
+body.addEventListener ("click", function(e) {
+  console.log(e.target);
+  console.log(isNavClosed);
+  if(e.target.classList.contains("mbicon")){
+    openNav();
+  }else
+  if(isNavClosed===false && !$(e.target).closest("#mySidenav").length){
+  // if(e.target.classList.contains("#mySidenav")){
+    // sideNav.style.display = "none";
+    // body.classList.remove('#mySidenav');
+    closeNav();
+  }}
+)
 
 
-// Thêm vào giỏ hàng => localStorage
 
-// Xoá sản phẩm
+// Image product
+function changeBorder(box) {
+  var boxes = document.querySelectorAll(".sm-img");
+  for (var i = 0; i < boxes.length; i++) {
+    boxes[i].classList.remove("selected");
+  }
+  box.classList.add("selected");
+}
+function changeImage(img) {
+  var mainImage = document.getElementById("bigimg");
+  console.log(mainImage);
+  mainImage.src = img.src;
+}
+
+
+//  numberCart
+var addToCartButtons = document.querySelectorAll(".addToCartButton");
+var numberCart = document.querySelector(".number-cart");
+
+addToCartButtons.forEach(function(button) {
+  button.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var productName = this.getAttribute("data-name");
+    var productPrice = parseFloat(this.getAttribute("data-price"));
+
+    // Lấy dữ liệu giỏ hàng từ Local Storage
+    var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+    var productExists = cartItems.some(function(item) {
+      return item.name === productName;
+    });
+
+    if (productExists) {
+      alert('Sản phẩm ' + productName + ' đã có trong giỏ hàng!');
+    } else {
+      // Sản phẩm chưa tồn tại trong giỏ hàng
+      var newQuantity = parseInt(numberCart.textContent) + 1;
+      numberCart.textContent = newQuantity;
+
+      // Cập nhật dữ liệu giỏ hàng vào Local Storage
+      var newItem = {
+        name: productName,
+        price: productPrice,
+        quantity: newQuantity
+      };
+      cartItems.push(newItem);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+      // Hiển thị thông báo thành công
+      var successMessage = document.createElement('div');
+      successMessage.textContent = 'Đã thêm ' + productName + ' vào giỏ hàng.';
+      successMessage.classList.add('success-message');
+      document.body.appendChild(successMessage);
+
+      // Xóa thông báo sau 3 giây
+      setTimeout(function() {
+        successMessage.remove();
+      }, 3000);
+
+      console.log('Thêm vào giỏ hàng: ' + productName);
+    }
+  });
+});
+
+function clearCart() {
+    localStorage.removeItem("cartItems");
+  }
+window.addEventListener("load", function() {
+    clearCart();
+});
+
+
+// localStorage.removeItem('cartProducts');
+
+
 
 // Bấm nút delete để xoá sản phẩm
 // Xoá trên giao diện
@@ -147,7 +237,7 @@ function updateCartInfo() {
   const totalQuantityElement = document.querySelector(".total-quantity");
 
   if (cartItems.length == 0) {
-    emptyCart.style.display = "block";
+    emptyCart.style.display = "table";
     shoppingCart.style.display = "none";
   } else {
     emptyCart.style.display = "none";
@@ -178,15 +268,3 @@ function updateCartInfo() {
 
 updateCartInfo();
 
-function changeBorder(box) {
-  var boxes = document.querySelectorAll(".sm-img");
-  for (var i = 0; i < boxes.length; i++) {
-    boxes[i].classList.remove("selected");
-  }
-  box.classList.add("selected");
-}
-// Todo: BG Image
-function changeImage(img) {
-  var mainImage = document.getElementById("bigimg");
-  mainImage.src = img.src;
-}

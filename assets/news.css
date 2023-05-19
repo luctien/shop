@@ -9,9 +9,25 @@
     font-size: 16px;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .new-text .date {
+        margin-top: -68%;
+        font-size: 12px;
+}
+    .lager-news .row {
+        row-gap: 54px;
+    }
+}
 @media screen and (max-width:992px) {
+    .new-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .lager-news .mobile.hide {
         display: block;
+        margin-bottom: 36px;
+        margin-top: 10px;
     }
     .lager-news .desktop {
         display: none;
@@ -22,37 +38,52 @@
     .lager-news .col-6 p {
         margin-bottom: 0;
     }
-    .lager-news .mobile {
-        margin-bottom: 40px;
-    }
     h4.news {
         padding-bottom: 20px !important;
     }
-}
-@media screen and (max-width:768px) {
-    .news-sec {
-        flex-direction: row !important;
-        gap: 10px;
+    .smaller-news .hide {
+        display: block;
     }
-    .news-sec p {
+    .list-page {
         font-size: 12px;
     }
+}
+@media screen and (max-width:767px) {
+    .new-text img {
+        height: 100px;
+    }
+    .news-sec {
+        flex-direction: row !important;
+        margin: 0 8px;
+        gap: 10px;
+    }
     .news-sec h6 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .smaller-news {
+        padding: 0;
         border-radius: 0px;
     }
     .smaller-news .mb-5 {
         margin-bottom: 0 !important;
     }
+    .smaller-news .text-center {
+        padding: 16px 0 8px !important;
+    }
     .smaller-news .text-end {
         display: none;
     }
+    .list-page {
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 576px) {
+    .lager-news .col-6 {
+        padding-right: 0;
+    }
     .lager-news .col-6 h6 {
-        padding-bottom: 0 !important;
+        /* padding-bottom: 0 !important; */
+        font-size: 20px;
     }
     .lager-news .text-info-emphasis {
         font-size: 12px;
@@ -62,5 +93,21 @@
     }
     .lager-news .mobile {
         font-size: 14px;
+    }
+    .smaller-news h6 {
+        font-weight: 600 !important;
+    }
+    .lager-news img {
+        height: 120px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .lager-news img {
+        height: 100px;
+        width: 90%;
+    }
+    .new-text .pb-3 {
+        padding-bottom: 0 !important;
     }
 }

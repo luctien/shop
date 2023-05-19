@@ -1,3 +1,6 @@
+.bg-body-tertiary {
+    border-radius: 8px;
+}
 .color {
     line-height: 52px;
 }
@@ -36,7 +39,7 @@
     /* margin: 30px 54px; */
 }
 .buynow {
-    background-color: #c70546;
+    background-color: #e7004d;
     color: white;
     line-height: 42px;
     padding: 0 40px;
@@ -61,6 +64,30 @@
     aspect-ratio: 4/3;
     height: 400px;
 }
+p.social i:hover {
+    cursor: pointer;
+}
+.color div {
+    /* padding: 8px; */
+}
 /* button.active {
     background-color: aquamarine;
 } */
+@media screen and (max-width:1200px) {
+    .bg-body-terticary {
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:992px) {
+    p.social {
+        font-size: 14px;
+    }
+    .rating-num {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .rating-num {
+        display: block;
+    }
+}
