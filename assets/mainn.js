@@ -122,3 +122,69 @@ addToCartButtons.forEach(function(button) {
 // function isProductInCart(productName) {
 //   return cartProducts.includes(productName);
 // }
+
+
+//filter theo price
+// products.sort((b,a)=>{
+//     return a.price-b.price;
+//   })
+
+// function sortByPriceDescending(products) {
+//   products.sort((a, b) => {
+//     return a.price - b.price;
+//   });
+// }
+// function sortByPriceUp(products) {
+//   products.sort((a, b) => {
+//     return b.price - a.price;
+//   });
+// }
+
+// const lowBtn = document.querySelector(".upsort");
+// console.log(lowBtn);
+// const highBtn = document.querySelector(".downsort");
+// lowBtn.addEventListener("click", sortByPriceDescending);
+// highBtn.addEventListener("click", sortByPriceUp);
+
+
+
+// var productList = document.getElementById("product-list");
+// productList.innerHTML = "";
+// products.forEach((product) => {
+//   let node = document.createElement("div");
+//   node.classList.add("col-12", "col-sm-6", "col-lg-4");
+//   let html =
+//     `<div class="item">
+//     <a href="./detailproduct.html">
+//       <div class="product-img"><img src="` +
+//     product["image-url"] +
+//     `" alt=""></div>
+//       <div class="product-info">
+//         <h6 class="pro-title">` +
+//     product.title +
+//     `</h6>
+//         <div class="pro-price">` +
+//     product.price.toLocaleString() +
+//     " đ" +
+//     `</div>
+//         <div class="pro-rating">
+//           <i class="fa-solid fa-star"></i>
+//           <i class="fa-solid fa-star"></i>
+//           <i class="fa-solid fa-star"></i>
+//           <i class="fa-solid fa-star"></i>
+//           <i class="fa-solid fa-star"></i>
+//           <div class="rating-num text-dark">(` +
+//     product["rating-num"] +
+//     `)</div>
+//         </div>
+//       </div>
+//     </a>
+//       <div class="add-cart">
+//         <a href="" class="addToCartButton" data-name="Product 1"><button>Thêm vào giỏ hàng</button></a>
+//       </div>
+//   </div>`;
+//   node.innerHTML = html;
+
+//   productList.appendChild(node);
+// });
+

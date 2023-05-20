@@ -6,6 +6,7 @@ var products=[
     "rating": 5,
     "rating-num": 50,
     "category": "Ghế",
+    "material": "Đồ da",
   },
   {
     "title": "Ghế Soto Apartment",
@@ -14,6 +15,7 @@ var products=[
     "rating": 4.5,
     "rating-num": 62,
     "category": "Ghế",
+    "material": "Thép",
   },
   {
     "title": "Ghế Soto Apartment",
@@ -21,6 +23,7 @@ var products=[
     "price": 2250000,
     "rating": 5,
     "rating-num": 73,
+    "material": "Thép",
     "category": "Bàn",
   },
   {
@@ -29,8 +32,8 @@ var products=[
     "price": 3250000,
     "rating": 5,
     "rating-num": 56,
-    "category": "Tủ",
-
+    "category": "Tủ, Kệ",
+    "material": "Đồ gỗ",
   },
   {
     "title": "Ghế Soto Apartment",
@@ -39,11 +42,25 @@ var products=[
     "rating": 5,
     "rating-num": 58,
     "category": "Giường",
-
+    "material": "Đồ da",
   }
 ]
-console.log(products);
 
+
+//  ScrollTop
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+    const menubar = document.getElementsByClassName("menu")[0];
+    var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+    console.log("dơn");
+      menubar.classList.remove("menu-sticky");
+   } else {
+    console.log("up");
+      menubar.classList.add("menu-sticky");
+   }
+   lastScrollTop = st;
+});
 
 
 // card-slider-product
@@ -94,8 +111,8 @@ const body = document.getElementsByTagName("body")[0];
 console.log(body);
 const sideNav = document.querySelector("#mySidenav");
 body.addEventListener ("click", function(e) {
-  console.log(e.target);
-  console.log(isNavClosed);
+  // console.log(e.target);
+  // console.log(isNavClosed);
   if(e.target.classList.contains("mbicon")){
     openNav();
   }else
