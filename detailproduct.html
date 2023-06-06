@@ -74,10 +74,11 @@
             </form></div>
             
             <div class="person">
-              <a href="">
-                <div class="user">
+              <!-- <a href=""> -->
+                <div class="user mx-4" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                   <i class="fas fa-user-alt"></i>
-                </div></a>
+                </div>
+              <!-- </a> -->
               <a href="./cart.html">
                 <div class="cart">
                 <i class="fas fa-shopping-cart"></i><div class="number-cart">0</div>
@@ -105,16 +106,18 @@
                 <a href="./index.html">Trang chủ</a><a href="./product.html">/Sản phẩm</a>/Sofa Soto Chair
             </h6>
         </div>
-        <h4 class=" detailpro text-center pb-5 text-uppercase fw-bold">Sofa Soto Chair</h4>
+        <h4 class=" detailpro text-center pb-md-5 text-uppercase fw-bold">Sofa Soto Chair</h4>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 mb-2">
                     <div>
-                      <div class="imgpro-top">
+                      <div class="imgpro-top productimg">
                           <img id="bigimg" src="./assets/image/2.JPG">
                           <!-- <div id="myresult" class="img-zoom-result"></div> -->
+                          
+                          
                       </div>
-                      <div class="imgpro-bottom d-flex justify-content-around">
+                      <div class="imgpro-bottom d-flex justify-content-center">
                         <div class="sm-img selected" onclick="changeBorder(this)">
                           <img src="./assets/image/2.jpg" alt="" onclick="changeImage(this)">
                         </div>
@@ -138,8 +141,11 @@
 
                 <div class="col-sm-12 col-md-6 bg-body-tertiary">
                   <div class="infor-pro">
-                    <h5 class="text-center p-4">Sofa Soto Chair</h5>
-                    <div class="d-sm-flex justify-content-evenly rating">
+                    <div class="d-flex">
+                      <h5 class="text-center p-4 name">Sofa Soto Chair</h5>
+                    <h6 class="text-bg-danger px-1 d-block d-sm-none lh-lg">25% <br>OFF</h6>
+                  </div>
+                    <div class="d-flex justify-content-evenly rating">
                       <div class="pro-rating rate-detail">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
@@ -153,28 +159,39 @@
                         <i class="fa-brands fa-instagram text-danger"></i>
                         <i class="fa-brands fa-twitter mx-1 text-info"></i>  </p>
                     </div>
-                    <div class="d-sm-flex align-items-center p-3">
+                    <div class="d-flex align-items-center p-3 pri">
                       <h4 class="fw-bold">đ 3.750.000</h4>
                       <h5 class="text-decoration-line-through text-body-tertiary mx-4">đ 5.000.000</h5>
                       <h6 class="text-bg-danger px-1 d-block">25% OFF</h6>
                     </div>
                       <p>Một chiếc ghế xinh đẹp phù hợp với phong cách đơn giản nhưng đầy tinh tế và sang trọng.</p></div>
                   
-                    <h6 class="color fw-semibold text-muted d-flex align-items-center px-5 mt-3">Màu sắc
+                    <!-- <h6 class="color fw-semibold text-muted d-flex align-items-center px-5 mt-3" id="btnColor">Màu sắc
                         <button class="x mx-3"></button>
                         <button class="n"></button>
                         <button class="r mx-3"></button>
-                    </h6>
-                    <h6 class="fw-semibold text-muted d-flex align-items-center px-5">Số lượng
+                    </h6> -->
+                    <div class="containerad pt-5">
+  <input type="radio" name="color" id="color-1" checked hidden>
+  <input type="radio" name="color" id="color-2" hidden>
+  <input type="radio" name="color" id="color-3" hidden>
+
+  <div class="product-nav fw-semibold text-muted d-flex align-items-center px-5">Màu sắc
+      <label for="color-1"></label>
+      <label for="color-2"></label>
+      <label for="color-3"></label>
+  </div>
+</div>
+                    <h6 class="fw-semibold text-muted d-flex align-items-center px-5 pt-4">Số lượng
                         <div class="product-quantity mx-3">
                             <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
                             <span class="quantity">1</span>
                             <button class="btn-up"><i class="fa-solid fa-add"></i></button>
                         </div>
                     </h6>
-                    <div class="d-sm-flex justify-content-evenly mt-5 mb-3">
-                    <button class="buynow">Mua ngay</button>
-                    <button class="addcart">Thêm vào giỏ hàng</button></div>
+                    <div class="d-flex justify-content-evenly mt-5 mb-3">
+                    <button class="buynow"><a href="./cart.html">Mua ngay</a></button>
+                    <button class="addToCartButton" data-name="SOFA SOTO CHAIR">Thêm vào giỏ hàng</button></div>
                   </div>
 
             </div>
@@ -186,8 +203,8 @@
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-            <p>Ghế Sofa Sven Charme Tan được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. Ghế hỗ trợ mang đến cho người dùng tư thế chuẩn nhất khi ngồi làm việc. Với kiểu dáng thiết kế thiên về trẻ trung, sang trọng và vô cùng hiện đại. Nhiều người thường hay bị nhầm lẫn dòng ghế công thái học với kiểu ghế văn phòng, form đứng đắn hơn rất nhiều.Ghế công thái học Ergonomic Felix 6232A được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. </p>
-            <span class="d-block">Chất liệu: Da</span>
+            <p>Ghế Sofa Sven Charme Tan được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. Ghế hỗ trợ mang đến cho người dùng tư thế chuẩn nhất khi ngồi làm việc. Với kiểu dáng thiết kế thiên về trẻ trung, sang trọng và vô cùng hiện đại. Nhiều người thường hay bị nhầm lẫn dòng ghế công thái học với kiểu ghế văn phòng, form đứng đắn hơn rất nhiều.Ghế được thiết kế dựa trên công nghệ Ergonomic đi kèm với những công năng tuyệt vời. </p>
+            <span class="d-block">Chất liệu: Da <br></span>
             <span>Trọng lượng: 20kg</span>
           </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
@@ -195,40 +212,40 @@
               <div class="d-flex align-items-center">
                 <img src="./assets/image/images 2.png" class="mx-4 mt-4 mb-2">
                 <div class="d-flex flex-column">
-                <h6 class="client"> Carlo Ancelotti - Nam Định</h6>
+                <h6 class="client fw-semibold">Carlo Ancelotti</h6>
                 <div class="text-warning">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i></div></div></div>
-                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+                <p class="comment fst-italic fw-normal mx-3">“Đây là chiếc ghế tốt nhất tôi từng mua. Chất liệu rất đáng tiền. Nó rất rộng rãi và chắc chắn. Đang tính mua thêm để đặt ở các phòng ngủ trong nhà. Đây là giao dịch mua tốt nhất từng được thực hiện. Chiếc ghế tạo thêm điểm nhấn phù hợp cho thiết kế tổng thể trong phòng của tôi. Lần tới chắc chắc tôi sẽ tiếp tục mua thêm sản phẩm của shop. Cảm ơn shop nhé !!!”</p>
             </div>
             <div class="">
               <div class="d-flex align-items-center">
                 <img src="./assets/image/images 1.png" class="mx-4 mt-4 mb-2">
                 <div class="d-flex flex-column">
-                <h6 class="client"> Carlo Ancelotti - Anh Quốc</h6>
+                <h6 class="client fw-semibold">Alex Ferguson</h6>
                 <div class="text-warning">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star-half-alt"></i></div></div></div>
-                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+                <p class="comment fst-italic fw-normal mx-3">“Chiếc ghế này thật đẹp và tiện dụng. Trông thật hoàn hảo trong ngôi nhà của chúng tôi. Tôi hơi lo lắng rằng nó sẽ quá cao, nhưng khi nhận hàng, nó rất vừa vặn. Nó đủ chắc chắn, nhưng cũng đủ mềm êm ái khi ngồi. Nó cũng khá nặng, không phải lo pet iu nhà tôi làm lật ghế.”</p>
             </div>
             <div class="">
               <div class="d-flex align-items-center">
                 <img src="./assets/image/images 3.png" class="mx-4 mt-4 mb-2">
                 <div class="d-flex flex-column">
-                <h6 class="client"> Carlo Ancelotti - Hà Nội</h6>
+                <h6 class="client fw-semibold">Jürgen Klopp</h6>
                 <div class="text-warning">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i></div></div></div>
-                <p class="comment fst-italic fw-normal mx-3">“Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không rõ danh tính lấy một bộ sưu tập các loại.”</p>
+                <p class="comment fst-italic fw-normal mx-3">“Chiếc ghế này thật tuyệt vời! Gia đình tôi vô cùng ấn tượng với chất lượng sản phẩm. Nó tốt hơn những gì chúng tôi có thể mong đợi, đặc biệt hơn là mọi thứ đều được thực hiện trực tuyến, rất nhanh gọn và tiện lợi. Tôi sẽ còn tiếp tục đặt hàng của shop.”</p>
             </div>
           </div>
         </div>
@@ -420,7 +437,7 @@
       <div class="logo"><h2>INTERIOR</h2></div>
       <h4 class="name">Công Ty Cổ Phần Bán Lẻ<br> Nội Thất Số Interior</h4>
       <div class="bottom">
-        <span class="follow">Theo dõi chúng tôi<br>
+        <span class="follow">Kết nối với chúng tôi<br>
           <a href=""><i class="fa-brands fa-square-facebook"></i></a>
           <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
           <a href=""><i class="fa-brands fa-square-instagram"></i></a>
@@ -431,11 +448,11 @@
     <div class="col-lg-2 col-md-6 col-sm-12 link">
       <h5>Liên kết hữu ích</h5>
       <ul>
-        <li><a href="">Trang chủ</a></li>
-        <li><a href="">Sản phẩm</a></li>
-        <li><a href="">Tin tức</a></li>
-        <li><a href="">Liên hệ</a></li>
-        <li><a href="">Giới thiệu</a></li>
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./product.html">Sản phẩm</a></li>
+        <li><a href="./news.html">Tin tức</a></li>
+        <li><a href="./contact.html">Liên hệ</a></li>
+        <li><a href="./present.html">Giới thiệu</a></li>
       </ul>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-12 link">
@@ -479,8 +496,64 @@
 
 
 
+<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <button class="nav-link nav-item active" role="presentation"
+          id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đăng nhập</button>
+          <button class="nav-link nav-item" role="presentation" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Đăng ký</button>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="container px-5 py-3 d-flex flex-column">
+            <input type="email" placeholder="Email hoặc số điện thoại" name="uname" required>
+            <input type="password" placeholder="Mật khẩu" name="psw" required>
+              
+            <button type="button" class="btn btn-primary loginbtn mb-3">Đăng nhập</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+            </label>
+            <a href="">Bạn quên mật khẩu?</a>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><div class="container px-5 py-3 d-flex flex-column">
+          <input type="text" placeholder="Tên tài khoản" name="uname" required>
+          <input type="email" placeholder="Email" name="uname" required>
+          <input type="number" placeholder="Số điện thoại" name="uname" required>
+          <input type="password" placeholder="Mật khẩu" name="psw" required>
+          <input type="password" placeholder="Xác nhận lại mật khẩu" name="psw" required>
+          <button type="button" class="btn btn-primary loginbtn mb-3">Đăng ký</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Đồng ý với điều khoản và chính sách
+          </label>
+        </div></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- <section class="containerad">
+  <input type="radio" name="color" id="color-1" checked hidden>
+  <input type="radio" name="color" id="color-2" hidden>
+  <input type="radio" name="color" id="color-3" hidden>
+  <input type="radio" name="color" id="color-4" hidden>
 
+  <div class="product-nav">
+      <label for="color-1"></label>
+      <label for="color-2"></label>
+      <label for="color-3"></label>
+      <label for="color-4"></label>
+  </div>
+
+  <div class="product">
+      <img src="http://pngimg.com/uploads/vans/vans_PNG24.png" alt="Product">
+  </div>
+
+</section> -->
 
   <!-- Import Thu vien Jquery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

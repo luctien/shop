@@ -73,10 +73,11 @@
             </form></div>
             
             <div class="person">
-              <a href="">
-                <div class="user">
+              <!-- <a href=""> -->
+                <div class="user mx-4" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                   <i class="fas fa-user-alt"></i>
-                </div></a>
+                </div>
+              <!-- </a> -->
               <a href="./cart.html" id="cartLink">
                 <div class="cart">
                 <i class="fas fa-shopping-cart"></i><div class="number-cart">0</div>
@@ -90,20 +91,11 @@
   <div class="menu menu-sticky">
     <div class="menu-main container">
       <ul class="menu-drop">
-        <li><a href="./index.html">TRANG CHỦ</a></li>
-        <li><a href="./product.html">SẢN PHẨM</a>
-          <!-- <i class="fa-solid fa-angle-down"></i></a>
-          <ul class="box-menu">
-            <li><a href="">BÀN</a></li>
-            <li><a href="">GHẾ</a></li>
-            <li><a href="">GIƯỜNG</a></li>
-            <li><a href="">TỦ</a></li>
-            <li><a href="">KỆ</a></li>
-          </ul> -->
-        </li>
-        <li><a href="./news.html">TIN TỨC</a></li>
-        <li><a href="./contact.html">LIÊN HỆ</a></li>
-        <li><a href="./present.html">GIỚI THIỆU</a></li>
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./product.html">Sản phẩm</a></li>
+        <li><a href="./news.html">Tin tức</a></li>
+        <li><a href="./contact.html">Liên hệ</a></li>
+        <li><a href="./present.html">Giới thiệu</a></li>
       </ul></div>
     </div>
     
@@ -121,7 +113,7 @@
       <div class="carousel-item active">
         <img src="./assets/image/slide5.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-block d-md-block">
-          <h5>Khuyến mại ngày lễ</h5>
+          <h5>Ưu đãi dành cho khách hàng</br> thân thiết</h5>
           <p>Giảm giá các mặt hàng trong dịp đại lễ nhằm chi ân khách hàng khi mua từ sản phẩm thứ 2</p>
           <a href="./news.html"><button class="btn-slide">Chi tiết</button></a>
         </div>
@@ -317,7 +309,7 @@
   
   
   <div class="product-most">
-    <h3 class="fw-bold text-center">Khuyến mãi</h3>
+    <h3 class="fw-bold text-center">Sản phẩm khuyến mãi</h3>
     <div class="card-slider container">
       <div class="item">
         <a href="./detailproduct.html">
@@ -492,7 +484,7 @@
       <div class="logo"><h2>INTERIOR</h2></div>
       <h4 class="name">Công Ty Cổ Phần Bán Lẻ<br> Nội Thất Số Interior</h4>
       <div class="bottom">
-        <span class="follow">Theo dõi chúng tôi<br>
+        <span class="follow">Kết nối với chúng tôi<br>
           <a href=""><i class="fa-brands fa-square-facebook"></i></a>
           <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
           <a href=""><i class="fa-brands fa-square-instagram"></i></a>
@@ -549,6 +541,46 @@
 </div>
 <div class="footer-bottom bg-black text-light text-center">© 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Nội Thất Số Interior</div>
 
+
+<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <button class="nav-link nav-item active" role="presentation"
+          id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đăng nhập</button>
+          <button class="nav-link nav-item" role="presentation" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Đăng ký</button>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="container px-5 py-3 d-flex flex-column">
+            <input type="email" placeholder="Email hoặc số điện thoại" name="uname" required>
+            <input type="password" placeholder="Mật khẩu" name="psw" required>
+              
+            <button type="button" class="btn btn-primary loginbtn mb-3">Đăng nhập</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+            </label>
+            <a href="">Bạn quên mật khẩu?</a>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><div class="container px-5 py-3 d-flex flex-column">
+          <input type="text" placeholder="Tên tài khoản" name="uname" required>
+          <input type="email" placeholder="Email" name="uname" required>
+          <input type="number" placeholder="Số điện thoại" name="uname" required>
+          <input type="password" placeholder="Mật khẩu" name="psw" required>
+          <input type="password" placeholder="Xác nhận lại mật khẩu" name="psw" required>
+          <button type="button" class="btn btn-primary loginbtn mb-3">Đăng ký</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Đồng ý với điều khoản và chính sách
+          </label>
+        </div></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

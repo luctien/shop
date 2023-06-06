@@ -103,7 +103,6 @@ function openNav() {
 function closeNav() {
   isNavClosed=true;
   document.getElementById("mySidenav").style.width = "0";
-  // document.body.style.backgroundColor = "white";
 }
 
 //  ĐÓNG MENU MOBILE
