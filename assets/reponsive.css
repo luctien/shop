@@ -190,6 +190,14 @@
     .footer-bottom, .service-text {
         display: none;
     }
+    .tab-content .container {
+        width: 90%;
+    }
+    #pills-tabContent input {
+        font-size: 14px;
+        padding-left: 14px !important;
+    }
+
 
 }
 @media screen and (max-height: 450px) {

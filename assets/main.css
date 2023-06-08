@@ -658,7 +658,7 @@ button.nav-item {
   color: #e39228;
 }
 .nav-item:hover {
-  color: #f5a338;
+  color: #fbac45;
 }
 .nav-item.active{
   background-color: #fff !important;
@@ -680,6 +680,7 @@ button.nav-item {
   /* --bs-modal-border-color: var(--bs-border-color-translucent); */
   border: none !important;
 }
+
 .tab-content .container {
   width: 80%;
 }
@@ -691,7 +692,25 @@ button.nav-item {
   margin-bottom: 16px;
   outline: none;
 }
-#pills-tabContent label {
-  font-size: 14px !important;
-  align-items: center;
+#pills-tabContent input:focus {
+  background-color: #f1f1f1;
+  border: 2px solid #e39228;
+}
+#pills-tabContent .checkbox p, #pills-tabContent .checkbox input {
+  margin-bottom: 4px;
+}
+#pills-tabContent .loginbtn {
+  box-shadow:0px 4px 6px 0px steelblue;
+}
+.modal-footer {
+  padding: 6px 12px;
+}
+.modal-footer button {
+  padding: 3px 8px;
+}
+#pills-tabContent .checkbox p {
+  margin-left: 6px;
+}
+#pills-tabContent a, #pills-tabContent p {
+  font-size: 14px;
 }
