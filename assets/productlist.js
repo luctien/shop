@@ -41,7 +41,7 @@ function renderProductList(products) {
 
   products.forEach((product) => {
     let node = document.createElement("div");
-    node.classList.add("col-12", "col-sm-6", "col-lg-4");
+    node.classList.add("col-6", "col-md-4", "col-lg-4");
     let html =
       `<div class="item">
         <a href="./detailproduct.html">
@@ -69,7 +69,7 @@ function renderProductList(products) {
           </div>
         </a>
         <div class="add-cart">
-          <a href="#" class="addToCartButton" data-name="Product 1"><button>Thêm vào giỏ hàng</button></a>
+          <a href="#" class="addToCartButton" data-name="` + product.title + `"><button>Thêm vào giỏ hàng</button></a>
         </div>
       </div>`;
     node.innerHTML = html;

@@ -144,9 +144,8 @@ a {
   padding: 8px 0px 8px 22px;
   text-decoration: none;
   font-size: 18px;
-  color: #818181;
+  color: #f0f0f0;
   display: block;
-  /* transition: 0.3s; */
 }
 .sidenav a i {
   margin-right: 12px;
@@ -170,6 +169,10 @@ a {
 }
 .sidenav .closebtn:hover {
   background-color: transparent;
+}
+#mySidenav {
+  box-shadow: 0 0 60px;
+  background-color: #1e1e1e;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -700,7 +703,7 @@ button.nav-item {
   margin-bottom: 4px;
 }
 #pills-tabContent .loginbtn {
-  box-shadow:0px 4px 6px 0px steelblue;
+  box-shadow: 0 1px 6px 0 steelblue;
 }
 .modal-footer {
   padding: 6px 12px;

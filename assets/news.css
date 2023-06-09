@@ -8,6 +8,9 @@
 .smaller-news h6 {
     font-size: 16px;
 }
+.lager-news .new-text .desktop, .lager-news .mobile {
+    text-indent: 40px;
+}
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .new-text .date {

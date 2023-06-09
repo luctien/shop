@@ -14,4 +14,7 @@
     .title-list ul li {
         line-height: 32px;
     }
+    .present ul h5 {
+        font-size: 18px !important;
+    }
 }
