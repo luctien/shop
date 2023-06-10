@@ -89,10 +89,10 @@ $(window).scroll(function(event){
     const menubar = document.getElementsByClassName("menu")[0];
     var st = $(this).scrollTop();
    if (st > lastScrollTop){
-    console.log("dơn");
+    // console.log("dơn");
       menubar.classList.remove("menu-sticky");
    } else {
-    console.log("up");
+    // console.log("up");
       menubar.classList.add("menu-sticky");
    }
    lastScrollTop = st;
@@ -285,8 +285,10 @@ function updateCartInfo() {
   const emptyCart = document.querySelector(".shopping-cart-empty");
   const shoppingCart = document.querySelector(".shopping-cart");
   const cartItems = document.querySelectorAll(".cart-item");
-  const totalPriceElement = document.querySelector(".total-price");
+  const totalPriceElement = document.querySelectorAll(".total-price");
   const totalQuantityElement = document.querySelector(".total-quantity");
+
+
 
   if (cartItems.length == 0) {
     emptyCart.style.display = "table";
@@ -300,23 +302,25 @@ function updateCartInfo() {
   let totalPrice = 0;
 
   cartItems.forEach((cartItem) => {
-    const price = +cartItem.querySelector(".product-price").textContent;
+    const price = +cartItem.querySelector(".product-price").textContent.replaceAll('.','');
+    // console.log(price)
     const quantity = +cartItem.querySelector(".quantity").textContent;
     const downButton = cartItem.querySelector(".btn-down");
     const total = cartItem.querySelector(".cart-item-price");
 
     // Cập nhật giá tiền cho từng item
-    total.textContent = price * quantity;
+    total.textContent = (price * quantity).toLocaleString();
 
     totalQuantity += quantity;
     totalPrice += price * quantity;
+    price.textContent = price.toLocaleString();
 
     downButton.disabled = quantity == 1;
   });
 
-  totalPriceElement.textContent = totalPrice;
+  totalPriceElement.textContent = totalPrice.toLocaleString();
   totalQuantityElement.textContent = totalQuantity;
+  totalPriceElement.forEach(e=> e.textContent = totalPrice.toLocaleString());
 }
 
 updateCartInfo();
-

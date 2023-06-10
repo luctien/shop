@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Thanh toán</title>
     <link rel="icon" href="./assets/image/interior.png">
 
     <!-- Import bootstrap -->
@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/reponsive.css">
     <link rel="stylesheet" href="./assets/cart.css">
+    <link rel="stylesheet" href="./assets/pay.css">
     
 </head>
 <body>
@@ -95,195 +96,111 @@
     </div>
   </div>
   <div class="cart-page container pb-5">
-        <h6 class="name-page mt-5"><a href="./index.html">Trang chủ</a>/Giỏ hàng</h6>
+        <h6 class="name-page mt-5"><a href="./index.html">Trang chủ</a>/<a href="./cart.html">Giỏ hàng</a>/Thanh toán</h6>
         <label for="show-shopping-cart"></label>
-        <h4 class="text-center pb-4 pt-5">GIỎ HÀNG</h4>
-
-        <div class="shopping-cart-empty">
-          <img src="./assets/image/empty-cart.webp" alt="">
-            <!-- <p class="text-center pb-5">Giỏ hàng đang trống</p> -->
+        <h4 class="text-center pb-4 pt-5">THANH TOÁN</h4>
+        <div class="container">
+            <div class="checkout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <p class="transport">
+                                <p class="tran-heading">Thông tin giao hàng</p>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <input type="name" placeholder="Họ Tên">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="number" placeholder="Số điện thoại">
+                                    </div>
+                                </div>
+                                <input type="email" placeholder="Email">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!-- <select name="calc_shipping_provinces" required="">
+                                            <option value="">Tỉnh / Thành phố</option>
+                                        </select> -->
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Tỉnh thành</option>
+                                            <option value="1">Hà Nội</option>
+                                            <option value="2">Đà Nẵng</option>
+                                            <option value="3">Tp. Hồ Chí Minh</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <!-- <select name="calc_shipping_district" required="">
+                                            <option value="">Quận / Huyện</option>
+                                        </select> -->
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Quận / Huyện</option>
+                                            <option value="1">Ba Đình</option>
+                                            <option value="2">Cầu Giấy</option>
+                                            <option value="3">Thanh Xuân</option>
+                                            <option value="3">Hà Đông</option>
+                                            <option value="3">Nam Từ Liêm</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                placeholder="Địa chỉ">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Ghi chú"></textarea>
+                            </p>
+                            <div class="payment">
+                                <p class="pay-heading">Phương thức thanh toán </p>
+                                <div class="live d-flex align-items-center">
+                                    <input type="radio" class="radio1" name="ok">
+                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                    <p>Thanh toán khi nhận hàng</p>
+                                </div>
+                                <div class="oline d-flex align-items-center">
+                                    <input type="radio" class="radio1" name="ok">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <p>Thanh toán trực tuyến</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="order-heading">Sản phẩm</p>
+                            <div class="order">
+                                <div class="order-intro">
+                                    <div class="order-infor">
+                                        <div class="row align-items-center">
+                                            <div class="col-3"><img src="./assets/image/4.jpg" alt=""></div>
+                                            
+                                            <div class="col-9 fw-bold">Ghế Sitzer</div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="row">
+                                            <div class="col-4 py-2">Giá:</div>
+                                            <div class="col-8 text-end">3.250.000 đ</div>
+                                        </div>
+                                    </div>
+                                    <div class="soluong">
+                                        <div class="row">
+                                            <div class="col-4">Số lượng:</div>
+                                            <div class="col-8 text-end">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="total">
+                                    <div class="row">
+                                        <div class="col-4">Tổng cộng:</div>
+                                        <div class="col-8 text-end tongtatca">6.500.000 đ</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btnorder ">Đặt hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    <!-- <input type="checkbox" name="" id="show-shopping-cart" /> -->
-
-    <table class="shopping-cart">
-      <thead class="shopping-cart-columns text-center bg-dark-subtle">
-        <tr>
-          <th class="p-3">Sản phẩm</th>
-          <th>Tên sản phẩm</th>
-          <th>Giá sản phẩm</th>
-          <th>Số lượng</th>
-          <th>Tạm tính (VNĐ)</th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody class="cart-items text-center">
-        <!-- <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/1.jpg"
-                alt=""
-              />
-              <div class="product-title">Ghế Apartment</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Ghế Apartment</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">1000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-              <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-              <span class="quantity">1</span>
-              <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">1000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr> -->
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/2r.jpg"
-                alt=""
-              />
-              <div class="product-title">Ghế Sofa Soto</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Ghế Sofa Soto</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">3.750.000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">2</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">1000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/3n.jpg"
-                alt=""
-              />
-              <div class="product-title">Kệ Đặt Kinshi</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Kệ Đặt Kinshi</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">2.000.000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">1</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">2000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="cart-item">
-          <td>
-            <div class="product-thumbnail">
-              <img
-                src="./assets/image/6.jpg"
-                alt=""
-              />
-              <div class="product-title">Bàn Coffe Mesa</div>
-            </div>
-          </td>
-          <td>
-            <div class="product-info">
-              <div class="product-title">Bàn Coffe Mesa</div>
-            </div>
-          </td>
-          <td class="price">
-            <div class="product-price">2.500.000</div>
-          </td>
-          <td>
-            <div class="product-quantity">
-                <button class="btn-down"><i class="fa-solid fa-minus"></i></button>
-                <span class="quantity">2</span>
-                <button class="btn-up"><i class="fa-solid fa-add"></i></button>
-            </div>
-          </td>
-          <td>
-            <div class="cart-item-price">5000</div>
-          </td>
-          <td>
-            <div class="cart-item-actions">
-              <button><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-
-      <tfoot class="text-center fw-bold">
-        <tr>
-          <td class="fs-6 fw-bold" colspan="3">Tổng</td>
-          <td class="total-quantity p-3 fs-6 fw-bold">4</td>
-          <td class="total-price position-relative fs-6 fw-bold">6900 vnđ</td>
-          <td></td>
-        </tr>
-      </tfoot>
-
-    </table>
-
-
-    <div class="d-flex justify-content-between flex-row">
-      <div class="back d-flex my-5">
-        <a href="./index.html">
-          <button class="backbtn text-bg-success py-1 px-3">Tiếp tục mua sắm
-        </button></a>
-      </div>
-
-      <div class="d-flex pay bg-light align-items-center justify-content-center flex-column">
-        <div class="d-flex totalpay">
-        <h5 class="fw-bold text-center">Tổng tiền:</h5><div class="total-price fs-5 fw-bold"></div></div>
-        <button class="pay-cart"><a href="./pay.html">THANH TOÁN</a></button>
-      </div>
+        
   </div>
 
     <div class="service container mb-5 mt-5">

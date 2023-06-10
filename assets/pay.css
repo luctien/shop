@@ -1,0 +1,117 @@
+.checkout input, .checkout select{
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+.checkout select option{
+    font-size: 12px !important;
+}
+.checkout input:focus{
+    background-color: #f6f6f6;
+    outline: 1px solid #feb453;
+}
+.checkout input {
+    font-size: 16px;
+}
+.payment input{
+    width: 3%;
+    margin: 5px 0;
+    border-radius: 6px;
+    height: 35px;
+    border: 1px solid #212529;
+    padding: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    padding: 5px 0px;
+    border: 1px solid #ddd;
+}
+input::placeholder,textarea::placeholder{
+    font-size: 12px;
+    padding-left: 10px;
+}
+.payment p{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.radio1,.radio2{
+    width: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.payment i{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.live,.oline{
+    border: 1px solid rgba(45, 45, 45, 0.125);
+    padding: 6px;
+    margin: 10px 0;
+}
+.price{
+   text-align: start;
+}
+.btnorder{
+    background-color: #af7c37;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 18px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    border: none;
+}
+.btnorder:hover{
+    background-color: #f19e30;
+    color: white;
+}
+.tran-heading,.payment .pay-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f555a;
+}
+.order p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.order{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    margin-top: 23px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f555a;
+    background-color: #f8f9fa;
+}
+.order-heading{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.checkout{
+    margin-bottom: 50px;
+}
+
+.live,.oline{
+    cursor: pointer;
+}
+.order-info .col-9{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price div,.soluong div,.discount div,.tamtinh div,.total div{
+    font-size: 15px;
+    font-weight: 600;
+}
+select.form-select {
+    padding-left: 12px;
+}

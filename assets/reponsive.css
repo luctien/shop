@@ -29,6 +29,12 @@
     ul.menu-drop {
         height: 44px;
     }
+    .item {
+        height: 400px;
+    }
+    .item .product-img img {
+        height: 190px;
+    }
 }
 
 
