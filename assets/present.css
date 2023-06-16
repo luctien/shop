@@ -7,9 +7,6 @@
 .present .title h6, .present .title p {
     text-indent: 40px;
 }
-.cart-page {
-    /* background-image: url(./image/slide1.png); */
-}
 @media screen and (max-width: 576px) {
     .title-list ul li {
         line-height: 32px;

@@ -77,11 +77,10 @@ function renderProductList(products) {
     productList.appendChild(node);
   });
 
-  // Lắng nghe sự kiện click trên các nút "addToCartButton"
   const addToCartButtons = document.querySelectorAll(".addToCartButton");
   addToCartButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
-      event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+      event.preventDefault();
       const productName = button.getAttribute("data-name");
       addToCart(productName);
     });
