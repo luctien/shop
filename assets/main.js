@@ -1,7 +1,7 @@
 var products=[
   {
     "title": "Ghế Sofa Soto",
-    "image-url": "./assets/image/2.jpg",
+    "image-url": "./assets/image/2.JPG",
     "price": 5250000,
     "rating": 4.8,
     "rating-num": 86,
@@ -10,7 +10,7 @@ var products=[
   },
   {
     "title": "Tủ Gỗ Ridge",
-    "image-url": "./assets/image/2n.jpg",
+    "image-url": "./assets/image/2n.JPG",
     "price": 6250000,
     "rating": 4.5,
     "rating-num": 62,
