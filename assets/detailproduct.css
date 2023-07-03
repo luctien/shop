@@ -1,31 +1,6 @@
 .bg-body-tertiary {
     border-radius: 8px;
 }
-/* .color {
-    line-height: 52px;
-}
-.color div {
-    background-color: aquamarine;
-}
-.color button {
-    padding: 12px;
-    border-radius: 50%;
-    border: none;
-}
-.color button:focus {
-    padding: 14px;
-    transition: .2s;
-    border: 1px solid rebeccapurple;
-}
-.x {
-    background-color: darkgrey;
-}
-.n {
-    background-color: chocolate;
-}
-.r {
-    background-color: brown;
-} */
 span.quantity {
     width: 36px;
     text-align: center;
@@ -187,7 +162,6 @@ p.social i:hover {
 #color-3:checked ~ .productimg::after{
     background-color: hsl(9, 100%, 23%);
 }
-
 
 #color-1:checked ~ .product-nav > label:nth-of-type(1), 
 #color-2:checked ~ .product-nav > label:nth-of-type(2),
