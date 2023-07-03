@@ -143,7 +143,6 @@ function closeNav() {
 
 //  ĐÓNG MENU MOBILE
 const body = document.getElementsByTagName("body")[0];
-console.log(body);
 const sideNav = document.querySelector("#mySidenav");
 body.addEventListener ("click", function(e) {
   // console.log(e.target);
@@ -171,7 +170,7 @@ function changeBorder(box) {
 }
 function changeImage(img) {
   var mainImage = document.getElementById("bigimg");
-  console.log(mainImage);
+  // console.log(mainImage, 'm');
   mainImage.src = img.src;
 }
 
